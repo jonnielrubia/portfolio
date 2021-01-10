@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.box-1 img{
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+.bg-image{
+width: 100%;
+min-height: 100vh;
+}
+.content-1{
+width: 100%;
+display: flex;
+
+}
+.intro{
+    padding-top: 10rem;
+    padding-left: 1rem;
+    position: absolute;
+    place-items: center;
+    
+}
+.intro > .text-1, .intro > .text-3{
+font-size: 2rem;
+}
+.intro > .text-2{
+font-size: 5rem;
+
+}
+.content-2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+    width: auto;
+    min-height: 100vh;
+}
+.box-1{
+    
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #727272,
+                -5px -5px 10px #ffffff;
+    width: 300px;
+    height: 70vh; 
+    padding:20px;
+    
+}
+.box-1:hover{
+    
+    display: flex;
+    color: white;
+    align-items: center;
+    border-radius: 32px;
+    background: #e01a1a;
+    box-shadow:  5px 5px 10px #6b2222,
+                -5px -5px 10px #836f6f;
+    width: 300px;
+    height: 70vh; 
+    padding:20px;
+    transition: 0.5s all ease;
+}
+.box-1:hover img{
+    color:white;
+}
+
+.box-1 img{
+width: 200px;
+height: 200px;
+margin: 30px;
+}
+
+.box-1 p{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.services, .skills{
+    font-family: 'ubuntu', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.content-3{
+display: flex;
+justify-content: center;
+
+min-height: 100vh;
+}
+
+.info{
+    display: flex;
+    padding: 1rem;
+    width: 40rem;
+    
+    border: 1 solid black;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+
+.info span{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    margin: 10px;
+}
+.progress{
+    background-color: rgb(182, 171, 171);
+    margin: 1rem;
+    height: 2px;
+    position: relative;
+}
+.progress-in{
+    background-color: rgb(223, 90, 90);
+    margin: 1rem;
+    height: 3px;
+    
+    z-index: 5;
+}
+
+
+

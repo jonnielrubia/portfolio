@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+:root{
+    
+    --primary-color: rgb(235, 37, 2);
+    }
+.footer{
+display: flex;
+grid-gap: 1rem;
+justify-content: center;
+align-items: center;
+bottom: 0;
+height: 10rem;
+width: 100%;
+background-color: var(--primary-color);
+}
+.footer .fab{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; 
+}
+.footer .far{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding:10px;
+}
+.footer .fas{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 10px 20px 10px 20px;
+
+}
+.footer i{
+    color: var(--primary-color);
+    
+}
+footer i span{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    
+}
