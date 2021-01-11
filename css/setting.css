@@ -1,0 +1,39 @@
+:root{
+    --primary-color: rgb(29, 28, 28);
+    --second-color: rgb(61, 59, 59);
+    --third-color: rgb(207, 198, 198);
+    --fourth-color:rgb(241, 234, 234);
+    --color1: rgb(235, 52, 19);
+    }
+input[type='checkbox']{
+display: none;
+}
+
+label{
+    height: 16px;
+    width: 30px;
+    background-color: rgb(175, 162, 162);
+    box-shadow: 0 10px red
+                0 -10px red;
+    position: fixed;
+    right: 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.ball{
+    height: 14px;
+    width: 14px;
+    background-color: rgb(91, 90, 94);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.active{
+    right: 0;
+    position: absolute;
+    transition: 5s all;
+}

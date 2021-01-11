@@ -7,42 +7,49 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/contents.css">
+  <link rel="stylesheet" href="css/setting.css">
   
 </head>
-<div class="nav-bar">
-  <div class="logo">
-    Porfolio
-  </div>
-<div class="right-nav-bar">
-  <div class="nav-bar-link">
-    <li><i class="fas fa-home"></i><a href="#">Home</a></li>
-  </div>
+<div class="nav-bar .active-nav">
+            <div class="logo">
+              Porfolio
+            </div>
+          <div class="right-nav-bar">
+                      <div class="nav-bar-link">
+                        <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+                      </div>
 
-  <div class="nav-bar-link">
-    <li><i class="fas fa-list"></i><a href="#">Services</a></li>
-  </div>
+                      <div class="nav-bar-link">
+                        <li><i class="fas fa-list"></i><a href="#">Services</a></li>
+                      </div>
 
-  <div class="nav-bar-link">
-    <li><i class="fas fa-briefcase"></i><a href="#">Skills</a></li>
-  </div>
+                      <div class="nav-bar-link">
+                        <li><i class="fas fa-briefcase"></i><a href="#">Skills</a></li>
+                      </div>
 
-  <div class="nav-bar-link">
-    <li><i class="fas fa-comment"></i><a href="#">Contact</a></li>
-  </div>
+                      <div class="nav-bar-link">
+                        <li><i class="fas fa-comment"></i><a href="#">Contact</a></li>
+                      </div>
 
-  </div>
+          </div>
 </div>    
+           
+            <body class="bgcolor">
+              
+              <form action=" " >
+                <input type="checkbox" id="mode-color">
+                <label for="mode-color" onclick="buttonchangecolor()">
+                  <div class="ball active"></div>
+                </label>
+              </form>
 
-<body>
-  
- 
-  <div class="intro">
-    <div class="text-1">Hello, my name</div>
-    <div class="text-2">Jonniel Rubia</div>
-    <div class="text-3">And I'm a Developer</div>
-  </div>
+          <div class="intro">
+            <div class="text-1">Hello, my name</div>
+            <div class="text-2">Jonniel Rubia</div>
+            <div class="text-3">And I'm a Developer</div>
+          </div>
 
-    <img class="bg-image" src="bg.jpg" alt="">        
+          <img class="bg-image" src="bg.jpg" alt="">        
         
  
     
@@ -178,6 +185,7 @@
   
   
   <script src="https://kit.fontawesome.com/fbf4068655.js" crossorigin="anonymous"></script>
+  <script src="js/setting.js"></script>
 
 </body>
 </html>

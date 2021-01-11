@@ -3,8 +3,13 @@
 
 :root{
     
-    --primary-color: rgb(235, 37, 2);
+    --primary-color: rgb(29, 28, 28);
+    --second-color: rgb(61, 59, 59);
+    --third-color: rgb(207, 198, 198);
+    --fourth-color:rgb(241, 234, 234);
+    --color1: rgb(235, 52, 19);
     }
+
 .footer{
 display: flex;
 grid-gap: 1rem;
@@ -13,21 +18,22 @@ align-items: center;
 bottom: 0;
 height: 10rem;
 width: 100%;
-background-color: var(--primary-color);
+background-color: var(--color1);
 }
 .footer .fab{
     background-color: rgb(255, 255, 255);
-    border-radius: 50%; 
+    border-radius: 50%;
+    color: var(--color1);
 }
 .footer .far{
-    background-color: var(--primary-color);
+    background-color: var(--color1);
     color: white;
     border-radius: 50%;
     border: 2px solid white;
     padding:10px;
 }
 .footer .fas{
-    background-color: var(--primary-color);
+    background-color: var(--color1);
     color: white;
     border-radius: 50%;
     border: 2px solid white;
@@ -35,7 +41,7 @@ background-color: var(--primary-color);
 
 }
 .footer i{
-    color: var(--primary-color);
+    background-color: var(--color1);
     
 }
 footer i span{
