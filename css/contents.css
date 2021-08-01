@@ -71,7 +71,7 @@ font-size: 5rem;
 .box-1 img{
 width: 200px;
 height: 200px;
-margin: 30px;
+/* margin: 30px; */
 }
 
 .box-1 p{
@@ -97,7 +97,6 @@ min-height: 100vh;
     display: flex;
     padding: 1rem;
     width: 40rem;
-    
     border: 1 solid black;
     justify-content: center;
     align-items: baseline;
