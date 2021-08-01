@@ -46,7 +46,10 @@
 
 .nav-bar .right-nav-bar{
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
+  height: 100%;
 }
 .nav-bar .right-nav-bar .nav-bar-link{
   text-align: center;
@@ -57,7 +60,11 @@
   height: 100%;
 }
 .nav-bar .right-nav-bar .nav-bar-link li{
-  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
   height: 100% !important;
 }
 .nav-bar .right-nav-bar .nav-bar-link li a{
@@ -66,14 +73,17 @@
   font-family: 'Ubuntu', sans-serif;
   padding-left: 5px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
-.nav-bar .right-nav-bar .nav-bar-link li:hover{
-  color: aliceblue;
+.nav-bar .right-nav-bar .nav-bar-link:hover{
+  color: aliceblue !important;
   cursor: pointer;
   background: rgb(207, 38, 8);
 }
-.nav-bar .right-nav-bar .nav-bar-link li:hover a{
+.nav-bar .right-nav-bar .nav-bar-link:hover li a{
   cursor: pointer;
   color: white;
 }
@@ -83,32 +93,29 @@
     height: 100vh;
     visibility: visible !important;
   }
-  .nav-bar{
-    width: 100%;
-    display: flex ;
+  /* .nav-bar{
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-  }
+  } */
+
   .nav-bar .right-nav-bar{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 70%;
     visibility: hidden;
   }
   .nav-bar .right-nav-bar .nav-bar-link{
     width: 100%;
     text-align: center;
-    height: 50%;
-    font-size: 20px;
+    height: 100%;
+    font-weight: 500 !important;
+    font-size: 25px !important;
   }
 
   .nav-bar .right-nav-bar .nav-bar-link li{
-    width: 100%;
     height: auto;
+    width: 130px;
   }
 
   .active-mobile-link{
