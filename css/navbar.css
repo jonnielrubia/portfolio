@@ -57,9 +57,8 @@
   height: 100%;
 }
 .nav-bar .right-nav-bar .nav-bar-link li{
-  padding: 5px;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
 }
 .nav-bar .right-nav-bar .nav-bar-link li a{
   width: 100%;
@@ -73,7 +72,6 @@
   color: aliceblue;
   cursor: pointer;
   background: rgb(207, 38, 8);
-  height: 100%;
 }
 .nav-bar .right-nav-bar .nav-bar-link li:hover a{
   cursor: pointer;
@@ -81,6 +79,10 @@
 }
 
 @media only screen and (max-width: 855px){
+  .active-mobile-nav{
+    height: 100vh;
+    visibility: visible !important;
+  }
   .nav-bar{
     width: 100%;
     display: flex ;
@@ -88,7 +90,6 @@
     justify-content: center;
     flex-direction: column;
   }
-  
   .nav-bar .right-nav-bar{
     width: 100%;
     display: flex;
@@ -96,12 +97,13 @@
     justify-content: center;
     align-items: center;
     height: auto;
+    visibility: hidden;
   }
   .nav-bar .right-nav-bar .nav-bar-link{
     width: 100%;
     text-align: center;
     height: 50%;
-    /* background-color: white; */
+    font-size: 20px;
   }
 
   .nav-bar .right-nav-bar .nav-bar-link li{
@@ -109,14 +111,10 @@
     height: auto;
   }
 
-  .active-mobile-nav{
-    height: 100vh;
-    visibility: visible !important;
-  }
-
   .active-mobile-link{
     visibility: visible !important;
   }
+
   .nav-icon1{
     /* background-color: blue; */
     width: 30px;

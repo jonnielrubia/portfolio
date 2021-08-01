@@ -1,7 +1,7 @@
 let ball =document.querySelector('.ball');
 let bar = document.querySelector('.nav-icon1')
 let navbar = document.querySelector('.nav-bar')
-let navLink = document.querySelector('.nav-bar-link');
+let navLink = document.querySelector('.right-nav-bar');
 
 function buttonchangecolor(){
     if (document.querySelector('input[type="checkbox"]:checked')){
