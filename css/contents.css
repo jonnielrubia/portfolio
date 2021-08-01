@@ -5,6 +5,16 @@ width: 100%;
 height: 100vh;
 overflow: hidden;
 }
+.bg-anim{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
 .bg-image{
 width: 100%;
 min-height: 100vh;
@@ -17,18 +27,132 @@ display: flex;
 .intro{
     padding-top: 10rem;
     padding-left: 1rem;
-    position: absolute;
     place-items: center;
+    height: 100vh;
     
 }
-.intro > .text-1, .intro > .text-3{
+.intro > .text-1{
 font-size: 2rem;
 }
-.intro > .text-2{
-font-size: 5rem;
-
+.intro > .text-3{
+    display: inline-flex;
+    font-size: 30px;
 }
-.content-2{
+.intro > .text-3 ul{
+    margin-left: 5px;
+    height: 30px;
+    
+    overflow: hidden;
+    /* background-color: blue; */
+}
+
+.intro > .text-3 ul li{
+    top: 0;
+    position: relative;
+    animation: slide-animation 4.8s steps(3) infinite;
+}
+
+@keyframes slide-animation{
+    100%{
+        top: -110px;
+    }
+}
+.intro > .text-3 ul li span{
+    position: relative;
+}
+.intro > .text-3 ul li span::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background-color: white ;
+    border-left: 2px solid pink;
+    animation: text-animation 1.6s steps(10) infinite;
+    
+}
+
+@keyframes text-animation{
+    100%{
+        left: 100%;
+        margin:  0 -17px 0 17px;
+    }
+}
+
+.intro > .text-2{
+    font-size: 3rem;
+    }
+.text-design{
+    color: pink;
+    position: relative  ;
+}
+.text-design::after{
+    height: 100px;
+    width: 5px;
+    color: pink;
+    position: absolute;
+}
+/* face */
+.face{
+    position: relative;
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face::before{
+    position: absolute;
+    content: "";
+    background-color: rgb(240, 148, 10);
+    width: 150px;
+    height: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    top: 180px;
+    transition: 0.5s;
+}
+.face:hover::before{
+    top:210px;
+    width: 150px;
+    height: 20px;
+    content: "";
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.face .eyes{
+    position: relative;
+    top: -40px;
+    display:flex;
+}
+
+.face .eyes .eye{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+
+.face .eyes .eye::before{
+    position: absolute;
+    left: 25px;
+    content: "";
+    top: 50%;
+    background-color: rgb(8, 3, 3);
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.content-2{ 
     display:flex;
     align-items: center;
     justify-content: center;
