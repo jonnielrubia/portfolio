@@ -65,8 +65,8 @@
     transition: color .4s ease;
 }
 
-.social a:hover i{
-    color: orange;
+.socials a:hover i{
+    color: rgb(50, 7, 148);
 }
 
 .footer-bottom{
