@@ -2,6 +2,8 @@ let ball =document.querySelector('.ball');
 let bar = document.querySelector('.nav-icon1')
 let navbar = document.querySelector('.nav-bar')
 let navLink = document.querySelector('.right-nav-bar');
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
 
 
 document.querySelector('body').addEventListener('mousemove',eyeball);
@@ -32,4 +34,17 @@ function bars(){
     bar.classList.toggle('open');
     navbar.classList.toggle('active-mobile-nav')
     navLink.classList.toggle('active-mobile-link');
+}
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
