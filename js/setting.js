@@ -3,8 +3,12 @@ let bar = document.querySelector('.nav-icon1')
 let navbar = document.querySelector('.nav-bar')
 let navLink = document.querySelector('.right-nav-bar');
 let mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
+let loader = document.querySelector('.spinner-border');
 
+window.onscroll = ()=>{scrollFunction()};
+window.addEventListener("load",()=>{
+    loader.className =+ "hidden";
+})
 
 document.querySelector('body').addEventListener('mousemove',eyeball);
 

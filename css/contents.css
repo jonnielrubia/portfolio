@@ -74,7 +74,7 @@ font-size: 1rem;
     left: 0;
     position: absolute;
     background-color: white ;
-    border-left: 2px solid pink;
+    border-left: 2px solid rgb(235, 114, 1);
     animation: text-animation 1.6s steps(10) infinite;
     
 }
@@ -90,13 +90,13 @@ font-size: 1rem;
     font-size: 3rem;
     }
 .text-design{
-    color: pink;
+    color: rgb(235, 114, 1);;
     position: relative  ;
 }
 .text-design::after{
     height: 100px;
     width: 5px;
-    color: pink;
+    color: rgb(235, 114, 1);
     position: absolute;
 }
 /* face */
