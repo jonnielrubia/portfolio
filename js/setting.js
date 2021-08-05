@@ -5,7 +5,9 @@ let navLink = document.querySelector('.right-nav-bar');
 let mybutton = document.getElementById("myBtn");
 let loader = document.querySelector('.spinner-border');
 
-window.onscroll = ()=>{scrollFunction()};
+window.onscroll = ()=>{
+    scrollFunction()
+};
 window.addEventListener("load",()=>{
     loader.className =+ "hidden";
 })
