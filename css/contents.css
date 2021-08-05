@@ -46,6 +46,7 @@ font-size: 1rem;
 }
 .intro > .text-3 ul{
     height: 40px;
+    padding-left: 7px;
     overflow: hidden;
     /* background-color: blue; */
 }
