@@ -1,15 +1,28 @@
 let ball =document.querySelector('.ball');
-let bar = document.querySelector('.nav-icon1')
-let navbar = document.querySelector('.nav-bar')
-let navLink = document.querySelector('.right-nav-bar');
+let navbar = $('.nav-bar')
+let navLink = $('.right-nav-bar');
 let mybutton = document.getElementById("myBtn");
-let loader = document.querySelector('.spinner-border');
+let loader = $('.spinner-border');
 
 window.onscroll = ()=>{
     scrollFunction()
 };
-window.addEventListener("load",()=>{
-    loader.className =+ "hidden";
+
+$(document).ready(()=>{
+    loader.fadeOut();
+
+    $('.nav-icon1').on('click',()=>{
+        $('.nav-icon1').toggleClass('open');
+        navbar.toggleClass('active-mobile-nav')
+        navLink.toggleClass('active-mobile-link');
+    });
+
+
+    $('.face').animate({
+        opacity: 1
+    },{
+        duration: 800
+    });
 })
 
 document.querySelector('body').addEventListener('mousemove',eyeball);
@@ -36,11 +49,8 @@ function buttonchangecolor(){
     }
 }
 
-function bars(){
-    bar.classList.toggle('open');
-    navbar.classList.toggle('active-mobile-nav')
-    navLink.classList.toggle('active-mobile-link');
-}
+// function bars(){
+// }
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -49,6 +59,7 @@ function scrollFunction() {
       mybutton.style.display = "none";
     }
 }
+
 
 function topFunction() {
   document.body.scrollTop = 0;
