@@ -124,6 +124,7 @@ font-size: 1rem;
     top: 180px;
     transition: 0.5s;
 }
+
 .face:hover::before{
     top:210px;
     width: 150px;
@@ -131,7 +132,9 @@ font-size: 1rem;
     content: "";
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    cursor:pointer;
 }
+
 .face .eyes{
     position: relative;
     top: -40px;
