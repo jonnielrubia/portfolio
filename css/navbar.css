@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-  
   --primary-color: rgb(29, 28, 28);
   --second-color: rgb(61, 59, 59);
   --third-color: rgb(207, 198, 198);
@@ -85,6 +84,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   
 }
 .nav-bar .right-nav-bar .nav-bar-link:hover{
