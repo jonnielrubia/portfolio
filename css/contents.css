@@ -228,10 +228,10 @@ font-size: 1rem;
 }
 
 .services, .skills{
-    font-family: 'ubuntu', sans-serif;
-    font-size: 3rem;
+    font-size: 22px;
+    font-weight: 600;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .skill-info{
@@ -278,6 +278,15 @@ font-size: 1rem;
 }
 
 /* contact */
+.custom-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+}
+
 .contact-section{
     width: 720px;
 }
