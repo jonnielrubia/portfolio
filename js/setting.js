@@ -2,6 +2,8 @@ let ball =document.querySelector('.ball');
 let navbar = $('.nav-bar')
 let navLink = $('.right-nav-bar');
 let mybutton = document.getElementById("myBtn");
+let form = document.querySelector(".contact-section form");
+let statusTxt = form.querySelector(".button-area span");
 
 // window.onscroll = ()=>{
 //     scrollFunction()
@@ -49,7 +51,30 @@ $(document).ready(()=>{
     })
 })
 
+form.onsubmit = (e) =>{
+    // e.preventDefault();
+    // statusTxt.style.display = "block";
+    // let xhr = new XMLHttpRequest();
+    // xhr.open("POST","message.php", false);
+    // xhr.onload = () =>{
+    //     if(xhr.readyState == 4 && xhr.status == 200){
+    //         let response = xhr.response;
+    //         console.log(response);
+    //     }
+    // }
+    // // let formData = new FormData();
+    // xhr.send();
+    // $.ajax({
+    //     type: 'POST',
+    //     url: 'message.php',
+    //     data: {asdfa: 'sfasfd'},
+    //     success: function(res){
+    //         console.log(res)
+    //     }
+    // })
+    // $('.button-area span').load('message.php');
 
+}
 
 function buttonchangecolor(){
     if (document.querySelector('input[type="checkbox"]:checked')){

@@ -277,5 +277,131 @@ font-size: 1rem;
     z-index: 5;
 }
 
+/* contact */
+.contact-section{
+    width: 720px;
+}
 
+.contact-section .title-section{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-bottom: 1px solid #bfbfbf ;
 
+}
+
+.contact-section form{
+    margin: 35px 30px;
+}
+
+form .dbl-field{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.dbl-field .field{
+    height: 50px;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+}
+
+form .field input,
+form .message-field textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+form .field input::placeholder,
+form .message-field textarea::placeholder{
+    color: #bfbfbf;
+}
+
+form .field input:focus,
+form .message-field textarea:focus{
+    border: 2px solid #0D6EFD
+}
+
+.contact-section form i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #bfbfbf;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 17px;
+}
+
+form .field input:focus ~ i{
+    color: #0D6EFD
+}
+
+form .message-field{
+    position: relative;
+}
+
+form .message-field i{
+    top: 30px;
+    font-size: 20px;
+}
+
+form .message-field textarea{
+    min-height: 120px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    padding: 15px 20px 0 48px;
+}
+
+form .button-area{
+    margin: 25px 0;
+}
+
+.button-area button{
+    font-size: 18px;
+    padding: 13px 25px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #0D6EFD;
+}
+
+.button-area span{
+    display: none;
+    color: #0D6EFD;
+    margin-left: 30px;
+}
+
+@media (max-width: 600px){
+    .contact-section .title-section{
+        text-align: center;
+    }
+    form .dbl-field{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .dbl-field .field{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form .button-area{
+        flex-direction: column;
+    }
+    .button-area button{
+        width: 100%;
+    }
+
+    .button-area span{
+        text-align: center;
+        margin: 30px 0;
+    }
+}
