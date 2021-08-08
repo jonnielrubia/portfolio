@@ -11,7 +11,7 @@ let statusTxt = form.querySelector(".button-area span");
 
 
 $(document).ready(()=>{
-    $('.spinner-border').fadeOut();
+    // $('.spinner-border').remove();
 
     $(document).on('scroll',()=>{
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
