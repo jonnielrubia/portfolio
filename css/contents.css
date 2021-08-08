@@ -163,22 +163,21 @@ font-size: 1rem;
     border-radius: 50%;
 }
 /* objective pages */
-.career-objective{
+.about-me{
     width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.career-objective > .title{
+.about-me > .title{
     width: 90%;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     padding: 50px;
 }
-.career-objective > .description{
+.about-me > .description{
     width: 80%;
-    height: 40px;
 }
 
 
@@ -189,7 +188,7 @@ font-size: 1rem;
     flex-wrap: wrap;
     grid-gap: 1rem;
     max-width: 100%;
-    min-height: 100vh;
+    height: 80vh;
 }
 .box-1{
     position: relative;
