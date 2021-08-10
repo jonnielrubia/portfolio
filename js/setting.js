@@ -32,6 +32,11 @@ $(document).ready(()=>{
         navLink.toggleClass('active-mobile-link');
     });
 
+    $('.nav-bar-link li a').on('click',()=>{
+        $('.nav-icon1').toggleClass('open');
+        navbar.toggleClass('active-mobile-nav')
+        navLink.toggleClass('active-mobile-link');
+    })
 
     $('.face').animate({
         opacity: 1
