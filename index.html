@@ -3,56 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Porfolio</title>
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/contents.css">
   <link rel="stylesheet" href="css/setting.css">
+  <link rel="stylesheet" href="css/switch.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<div class="nav-bar">
-  <div class="logo">
-    Porfolio
-  </div>
-  <div class="right-nav-bar">
-    <div class="nav-bar-link">
-      <li><a href="#home">Home</a></li>
+<body>
+  <div class="nav-bar light-mode">
+    <div class="logo">
+      My Porfolio
     </div>
-    <div class="nav-bar-link">
-      <li><a href="#about">About me</a></li>
-    </div>
-    <div class="nav-bar-link">
-      <li><a href="#services">Services</a></li>
-    </div>
-    <div class="nav-bar-link">
-      <li><a href="#skills">Skills</a></li>
-    </div>
+    <div class="right-nav-bar">
+      <div class="nav-bar-link">
+        <li><a href="#home">Home</a></li>
+      </div>
+      <div class="nav-bar-link">
+        <li><a href="#about">About me</a></li>
+      </div>
+      <div class="nav-bar-link">
+        <li><a href="#services">Services</a></li>
+      </div>
+      <div class="nav-bar-link">
+        <li><a href="#skills">Skills</a></li>
+      </div>
 
-    <div class="nav-bar-link">
-      <li><a href="#contact">Contact</a></li>
+      <div class="nav-bar-link">
+        <li><a href="#contact">Contact</a></li>
+      </div>
+    </div>
+    <!-- <div class="nav-icon1" onclick="bars()"> -->
+      <div class="nav-icon1">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
-  <!-- <div class="nav-icon1" onclick="bars()"> -->
-    <div class="nav-icon1">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
            
-<body class="bgcolor">
-  <!-- <div class = "spinner-container">
-    <div class="spinner-border m-5" role="status">
-    </div>
-  </div> -->
-
-  <form class="setting-controller">
-    <input type="checkbox" id="mode-color">
-    <label for="mode-color" onclick="buttonchangecolor()">
-      <div class="ball active"></div>
+  <div class="mode-toggle">
+    <label class="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider round"></span>
     </label>
-  </form>
+  </div>
 
   <div class="bg-anim">
     <div class="intro">
@@ -137,70 +133,6 @@
       <div class="skill-info">
         <span class="skills">Skills</span>
         <a name="skills"></a>
-        <!-- <div class="info">
-          <span>HTML</span>
-            <div class="progress" style="width:400px">
-              <div class="progress-in" style="width:90%"></div>
-            </div>
-          <span>90%</span>
-        </div>
-
-        <div class="info">
-          <span>CSS</span>
-            <div class="progress" style="width:400px">
-              <div class="progress-in"style="width:85%"></div>
-            </div>
-          <span>85%</span>
-        </div>  
-
-        <div class="info">
-          <span>JavaScript</span>
-            <div class="progress" style="width:400px">
-              <div class="progress-in" style="width:85%"></div>
-            </div>
-          <span>85%</span>
-        </div>
-
-        <div class="info">
-          <span>NodeJS</span>
-            <div class="progress" style="width:400px" >
-              <div class="progress-in" style="width:90%"></div>
-            </div>
-          <span>90%</span>
-        </div>  
-
-        <div class="info">
-          <span>PHP</span>
-            <div class="progress" style="width:400px">
-              <div class="progress-in" style="width:10%" ></div>
-            </div>
-          <span>10%</span>
-          </div>
-
-        <div class="info">
-          <span>C#</span>
-            <div class="progress" style="width:400px">
-              <div class="progress-in" style="width:10%" ></div>
-            </div>
-          <span>10%</span>
-        </div>
-
-        <div class="info">
-          <span>MySql</span>
-            <div class="progress" style="width:400px">
-              <div class="progress-in" style="width:70%"></div>
-            </div>
-          <span>70%</span>
-          </div>
-
-        <div class="info">
-          <span>MondgoDB</span>
-            <div class="progress" style="width:400px">
-              <div class="progress-in" style="width:70%"></div>
-            </div>
-          <span>70%</span>
-        </div> -->
-
         <div class="info">
           <span>HTML</span>
           <div class="progress">
@@ -314,12 +246,12 @@
     </Section>
   </div>
   
-  <div class="footer">
+  <div class="footer light-mode">
     <div class="footer-content">
       <h3>JWebCode</h3>
       <ul class="socials">
         <li>
-          <a href ="https://facebook.com/jonniel.rubia"><i class="fa fa-facebook"></i></a>
+          <a href ="#"><i class="fa fa-facebook"></i></a>
         </li>
         <li>
           <a href ="#"><i class="fa fa-envelope"></i></a>
@@ -348,6 +280,7 @@
   </script>
   <script src="https://kit.fontawesome.com/fbf4068655.js" crossorigin="anonymous"></script>
   <script src="js/setting.js"></script>
+  <script src="js/switch.js"></script>
   
 
 </body>

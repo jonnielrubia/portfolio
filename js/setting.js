@@ -1,17 +1,11 @@
 let ball =document.querySelector('.ball');
-let navbar = $('.nav-bar')
 let navLink = $('.right-nav-bar');
 let mybutton = document.getElementById("myBtn");
 let form = document.querySelector(".contact-section form");
 let statusTxt = form.querySelector(".button-area span");
 
-// window.onscroll = ()=>{
-//     scrollFunction()
-// };
-
 
 $(document).ready(()=>{
-    // $('.spinner-border').remove();
 
     $(document).on('scroll',()=>{
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -28,13 +22,13 @@ $(document).ready(()=>{
 
     $('.nav-icon1').on('click',()=>{
         $('.nav-icon1').toggleClass('open');
-        navbar.toggleClass('active-mobile-nav')
+        navbar.classList.toggle('active-mobile-nav')
         navLink.toggleClass('active-mobile-link');
     });
 
     $('.nav-bar-link li a').on('click',()=>{
         $('.nav-icon1').toggleClass('open');
-        navbar.toggleClass('active-mobile-nav')
+        navbar.classList.toggle('active-mobile-nav')
         navLink.toggleClass('active-mobile-link');
     })
 
@@ -56,50 +50,4 @@ $(document).ready(()=>{
     })
 })
 
-form.onsubmit = (e) =>{
-    // e.preventDefault();
-    // statusTxt.style.display = "block";
-    // let xhr = new XMLHttpRequest();
-    // xhr.open("POST","message.php", false);
-    // xhr.onload = () =>{
-    //     if(xhr.readyState == 4 && xhr.status == 200){
-    //         let response = xhr.response;
-    //         console.log(response);
-    //     }
-    // }
-    // // let formData = new FormData();
-    // xhr.send();
-    // $.ajax({
-    //     type: 'POST',
-    //     url: 'message.php',
-    //     data: {asdfa: 'sfasfd'},
-    //     success: function(res){
-    //         console.log(res)
-    //     }
-    // })
-    // $('.button-area span').load('message.php');
 
-}
-
-function buttonchangecolor(){
-    if (document.querySelector('input[type="checkbox"]:checked')){
-        document.querySelector('.ball').classList.add('active');
-        document.querySelector('body').classList.add('bgcolor');
-
-    }else{
-        document.querySelector('.ball').classList.remove('active');
-        document.querySelector('body').classList.remove('bgcolor');
-    }
-}
-
-// function bars(){
-// }
-
-// function scrollFunction() {
-// }
-
-
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }

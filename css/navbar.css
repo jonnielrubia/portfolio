@@ -1,64 +1,91 @@
+:root {
+  --background-color-dark: #333;
+  --text-color-dark: #f7f7f7;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+  --background-color-light: #eb3413;
+  --text-color-light: #f7f7f7;
+  --button-hover: #00000019;
+}
 
-:root{
-  --primary-color: rgb(29, 28, 28);
-  --second-color: rgb(61, 59, 59);
-  --third-color: rgb(207, 198, 198);
-  --fourth-color:rgb(241, 234, 234);
-  --color1: rgb(235, 52, 19);
-  }
-
-*{
+* {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   padding: 0;
-  margin : 0;
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.setting-controller{
+.setting-controller {
   z-index: 100;
 }
 
-.logo{
+.logo {
   position: absolute;
   left: 10px;
   top: 18px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 30px;
   text-shadow: 0 0 5px black;
 }
 
-
-.bgcolor::-webkit-scrollbar{
-  background-color: white;
-  display: none;
-}
-
-.nav-bar{
+.nav-bar {
   top: 0;
-  color:var(--color1);
-  background-color: white;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   width: 100%;
   z-index: 100;
   height: 70px;
   text-align: center;
-  transition: 0.1s ease-in-out;
 }
 
-.nav-bar .right-nav-bar{
+/* Light Mode Styles */
+body .light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body .dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar.light-mode {
+  background-color: var(--background-color-light);
+  color: #fff;
+}
+
+a {
+  color: var(--text-color-light) !important;
+  border: none;
+}
+
+/* Dark Mode Styles */
+body .dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.nav-bar.dark-mode {
+  background-color: var(--background-color-dark);
+  color: #fff;
+}
+
+a .dark-mode {
+  color: var(--text-color-dark) !important;
+}
+
+.nav-bar .right-nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   height: 100%;
 }
-.nav-bar .right-nav-bar .nav-bar-link{
+.nav-bar .right-nav-bar .nav-bar-link {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -66,56 +93,49 @@
   width: 100%;
   height: 100%;
 }
-.nav-bar .right-nav-bar .nav-bar-link li{
+.nav-bar .right-nav-bar .nav-bar-link li {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 100% !important;
 }
-.nav-bar .right-nav-bar .nav-bar-link li a{
+.nav-bar .right-nav-bar .nav-bar-link li a {
   width: 100%;
-  color:var(--color1);
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding-left: 5px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  
-}
-.nav-bar .right-nav-bar .nav-bar-link:hover{
-  color: aliceblue !important;
-  cursor: pointer;
-  background: rgb(207, 38, 8);
-}
-.nav-bar .right-nav-bar .nav-bar-link:hover li a{
-  cursor: pointer;
-  color: white;
-  width: 100%;
-  height: 100%;
 }
 
-@media only screen and (max-width: 855px){
-  .active-mobile-nav{
+.nav-bar .right-nav-bar .nav-bar-link:hover {
+  color: var(--text-color-light);
+  cursor: pointer;
+}
+.nav-bar .right-nav-bar .nav-bar-link:hover li a {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 855px) {
+  .active-mobile-nav {
     height: 100vh;
     transition: 0.1s ease-in-out;
-    visibility: visible !important;
+    visibility: visible;
   }
-  .nav-bar{
+  .nav-bar {
     position: fixed;
   }
 
-  .nav-bar .right-nav-bar{
+  .nav-bar .right-nav-bar {
     width: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
     height: 70%;
     visibility: hidden;
   }
-  .nav-bar .right-nav-bar .nav-bar-link{
+  .nav-bar .right-nav-bar .nav-bar-link {
     width: 100%;
     text-align: center;
     height: 100%;
@@ -123,16 +143,16 @@
     font-size: 25px !important;
   }
 
-  .nav-bar .right-nav-bar .nav-bar-link li{
+  .nav-bar .right-nav-bar .nav-bar-link li {
     height: auto;
     width: 130px;
   }
 
-  .active-mobile-link{
+  .active-mobile-link {
     visibility: visible !important;
   }
 
-  .nav-icon1{
+  .nav-icon1 {
     /* background-color: blue; */
     width: 30px;
     height: 35px;
@@ -142,24 +162,24 @@
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
     margin: 6px;
     z-index: 8;
     right: 15px;
     top: 15px;
   }
-  
-  .nav-icon1 span{
+
+  .nav-icon1 span {
     z-index: 90;
     display: block;
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #0c0c0c;
+    background: var(--text-color-light);
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -167,25 +187,28 @@
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
   }
-  
-  
+
+  .nav-icon1 span .dark-mode {
+    background-color: var(--background-color-light);
+  }
+
   .nav-icon1 span:nth-child(1) {
     top: 0px;
   }
-  
+
   .nav-icon1 span:nth-child(2) {
     top: 10px;
   }
-  
+
   .nav-icon1 span:nth-child(3) {
     top: 20px;
   }
-  
+
   .nav-icon1.open span:nth-child(1) {
     top: 10px;
     -webkit-transform: rotate(135deg);
@@ -193,12 +216,12 @@
     -o-transform: rotate(135deg);
     transform: rotate(135deg);
   }
-  
+
   .nav-icon1.open span:nth-child(2) {
     opacity: 0;
     left: -60px;
   }
-  
+
   .nav-icon1.open span:nth-child(3) {
     top: 10px;
     -webkit-transform: rotate(-135deg);
@@ -207,6 +230,3 @@
     transform: rotate(-135deg);
   }
 }
-
-
-
